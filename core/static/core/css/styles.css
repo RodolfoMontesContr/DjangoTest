@@ -1,0 +1,276 @@
+.product_destacado{
+    width: 400px;
+    height: 250px;
+}
+.ficha_producto{
+    width: 600px;
+    height: 350px;
+}
+.ficha_producto2{
+    width: 500px;
+    height: 350px;
+}
+
+.producto_destacado{
+    width: 200px;
+    height: 200px;
+}
+
+.bInicio a{
+
+    float: left;
+    position: relative;
+    bottom: 865px;
+    text-decoration: none;
+    background-color: white;
+    width: 100px;
+    padding: 5px;
+    border: 3px solid black;
+    color: black;
+    
+    
+}
+
+.bInicio a:hover{
+
+    background-color: gray;
+
+}
+
+
+
+body{
+
+    font-family: Arial; box-sizing: border-box;
+}
+
+form{
+
+    margin: 0 auto;
+    width: 300px;
+    padding: 40px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+input, textarea{
+
+    outline: none;
+    
+    
+}
+
+.btn{
+
+    border-radius: 3px;
+    display:  inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+
+}
+
+.btn-green{
+
+    color: white;
+    background-color: #3CC93F;
+}
+.btn-green:hover{
+
+    color: white;
+    background-color: #37B839;
+}
+.encabezado a{
+
+    float: right;
+    position: relative;
+    bottom: 225px;
+    left: 10px;
+    padding: 5px;
+    border-color: red;
+    background-color:white;
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    width: 170px;
+    
+    
+}
+
+.gato{
+    width: 1515px;
+    height: 300px;
+}
+
+.page_color{
+    background-color: #ffffff;
+}
+
+.colores_elementos{
+    background-color:purple;
+}
+
+
+
+.footer__background{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.footer__lista{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10%;
+    justify-content: center;
+    height: auto;
+}
+.footer__lista--div{
+    display: flex;
+    flex-direction: column;
+}
+.footer__titulos{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 110%;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.footer__items{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 110%;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.footer__items2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 110%;
+    padding-top: 7%;
+    text-decoration: none;
+}
+.footer__items--redes{
+    width: 35px;
+    height: 35px;
+    padding-right: 2px;
+}
+.footer__items:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0%;
+    position: relative;
+    background: black;
+    transition: width 0.7s ease 0s, left 0.7s ease 0s;
+    width: 0;
+}
+.footer__items:hover::after{
+  width: 100%; 
+  left: 0; 
+}
+.footer__items--redes:hover{
+  transform: scale(1.2);
+}
+
+header,nav{
+   background-color: purple;
+}
+
+#text{
+    color:whitesmoke
+}
+
+li{
+    color: whitesmoke;
+}
+
+.texto{
+    color: white;
+}
+div{
+    color: white;
+}
+header{
+    color: white;
+}
+
+#viewPassword{
+    cursor:pointer;
+
+}
+
+body{
+    height: 90vh;
+    display: flex;
+    
+    flex-direction: column;
+    
+
+}
+
+.contenedor{
+    display: grid;
+    grid-gap: 10px;
+    justify-content: end;
+    width: 100%;
+}
+
+#caja1, #caja2, #caja3{
+    display: flex;
+    text-align: end;
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+#cajasub{
+    display: flex;
+    text-align: end;
+    column-gap: 10px;
+    justify-content: flex-end;
+    padding-top: 8px;
+    padding-right: 75px;
+}
+
+
+@media screen and (max-width: 425px){
+    #cajasub{
+        display: flex;
+        text-align: end;
+        column-gap: 10px;
+        justify-content: flex-end;
+        padding-top: 8px;
+    }
+
+}
+
+
+.resultados {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.result {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	height: 400px;
+	width: 300px;
+}
+.result img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.caja-resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
