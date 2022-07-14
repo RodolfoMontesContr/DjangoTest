@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.conf import settings
 from django.urls import path, include
+from crud import views as crud
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('core.urls')),
+    path('crud/',include('crud.urls')),
 ]
 if settings.DEBUG:
     from django.conf.urls.static import static
