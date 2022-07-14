@@ -1,3 +1,4 @@
+{% load svg %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
     <header>
       <div class="container">
         <div id="caja1">
-          <img id="icono-animado" src="" alt="" height="40" width="40">
+          <img id="" src="{% static 'core/svg/cloudy-day-1.svg' %}" alt="" height="40" width="40">
           <div id="cajasub">
             <p id="temperatura-valor" class="text-right"></p>
             <p id="temperatura-descripcion" hidden></p>
@@ -44,26 +45,57 @@
                     <a class="nav-link text-white" href="{% url 'home' %}">Inicio</a>
                   </li>
                   <li class="nav-item pe-3">
-                    <a class="nav-link text-white" href="./vistas/productos.html">Productos</a>
+                    <a class="nav-link text-white" href="{% url 'productos' %}">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="./ayuda.html">Ayuda</a>
+                    <a class="nav-link text-white" href="{% url 'ayuda' %}">Ayuda</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="./registro.html">Registro</a>
+                    <a class="nav-link text-white" href="{% url 'registro' %}">Registro</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-nowrap text-white" href="./iniciarsesion.html">Iniciar sesion</a>
+                    <a class="nav-link text-nowrap text-white" href="{% url 'iniciarsesion' %}">Iniciar sesion</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-nowrap text-white" href="./vistas/cuenta.html">Cuenta</a>
+                    <a class="nav-link text-nowrap text-white" href="{% url 'cuenta' %}">Cuenta</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
           <script src="../../static/core/js/climaPrueba.js"></script>
+          
     </header>
 
     {% block first_content %}{% endblock %}
     {% block second_content %}{% endblock %}
+    
+
+
+    <footer class="footer__background colores_elementos">
+        <div class="footer__lista">
+            <div class="footer__lista--div">
+                <p class="footer__titulos " >Sobre nosotros</p>
+                <a href="{% url 'terminosycondiciones' %}" class="footer__items " >Terminos y Condiciones</a>
+                <a href="{% url 'afiliados' %}" class="footer__items " >Afiliados</a>
+                <a href="{% url 'trabajeconnosotros' %}" class="footer__items " >Trabaje con nosotros</a>
+            </div> 
+            <div class="footer__lista--div">
+                <p class="footer__titulos " >Beneficios</p>
+                <a href="{% url 'ofertas' %}" class="footer__items " >Ofertas</a>
+                <a href="{% url 'nuestrosdescuentos' %}" class="footer__items " >Nuestros descuentos</a>
+                <a href="{% url 'atencionlocales' %}" class="footer__items " >Atención en otros locales</a>
+            </div>
+            <div class="footer__lista--div">
+                <p class="footer__titulos " >Redes sociales</p>
+                <div class="footer__items2">
+                    <a href="https://es-la.facebook.com/"><img src="../../static/core/img/facebook_logo.png" alt="facebook" class="footer__items--redes"></a>
+                    <a href="https://web.whatsapp.com/"><img src="../../static/core/img/whatsapp_logo.png" alt="whatsapp" class="footer__items--redes"></a>
+                    <a href="https://www.instagram.com/?hl=es-la"><img src="../../static/core/img/Instagram Logo_.png" alt="instagram" class="footer__items--redes"></a>
+                </div>
+            </div>
+    </footer>
+  
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+</html>

@@ -30,7 +30,7 @@ window.addEventListener('load', ()=> {
                 
                 temperaturaValor.textContent = `${temp} ° C`
 
-                
+
                 let desc = data.weather[0].description
                 temperaturaDescripcion.textContent = desc.toUpperCase()
                 ubicacion.textContent = data.name
@@ -43,38 +43,38 @@ window.addEventListener('load', ()=> {
                 console.log(data.weather[0].main)
                 switch (data.weather[0].main) {
                     case 'Thunderstorm':
-                      iconoAnimado.src='../img/animated/thunder.svg'
+                      iconoAnimado.src='../svg/thunder.svg'
                       console.log('TORMENTA');
                       break;
                     case 'Drizzle':
-                      iconoAnimado.src='../img/animated/rainy-2.svg'
+                      iconoAnimado.src='../svg/rainy-2.svg'
                       console.log('LLOVIZNA');
                       break;
                     case 'Rain':
-                      iconoAnimado.src='../img/animated/rainy-7.svg'
+                      iconoAnimado.src='../svg/rainy-7.svg'
                       console.log('LLUVIA');
                       break;
                     case 'Snow':
-                      iconoAnimado.src='../img/animated/snowy-6.svg'
+                      iconoAnimado.src='../svg/snowy-6.svg'
                         console.log('NIEVE');
                       break;                        
                     case 'Clear':
-                        iconoAnimado.src='../img/animated/day.svg'
+                        iconoAnimado.src='../svg/day.svg'
                         console.log('LIMPIO');
                       break;
                     case 'Atmosphere':
-                      iconoAnimado.src='../img/animated/weather.svg'
+                      iconoAnimado.src='../svg/weather.svg'
                         console.log('ATMOSFERA');
                         break;  
                     case 'Clouds':
-                        iconoAnimado.src='../img/animated/cloudy-day-1.svg'
+                        iconoAnimado.src='../svg/cloudy-day-1.svg'
                         console.log('NUBES');
                         break;  
                     default:
-                      iconoAnimado.src='../img/animated/cloudy-day-1.svg'
-                      console.log('por defecto');
+                      iconoAnimado.src='../svg/cloudy-day-1.svg'
+                      console.log('pordefecto');
                   }
-
+                  
             })
             .catch( error => {
                 console.log(error)
