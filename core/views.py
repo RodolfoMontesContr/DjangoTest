@@ -1,6 +1,7 @@
 from msilib.schema import AppId
 from nturl2path import url2pathname
 from django.shortcuts import render, redirect
+from crudsucursales.models import Sucursal
 
 
 # Create your views here.
@@ -59,4 +60,5 @@ def trabajeconnosotros(request):
     return render(request,'core/trabajeconnosotros.html')
 
 def vistasucursales(request):
-    return render(request,'core/sucursales.html')
+    context = {'sucursal':Sucursal.objects.all()}
+    return render(request,'core/sucursales.html',context)
