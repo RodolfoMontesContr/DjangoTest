@@ -17,12 +17,14 @@ from django.contrib import admin
 from django.conf import settings
 from django.urls import path, include
 from crud import views as crud
+from crudcategorias import views as crudcategorias
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('core.urls')),
     path('crud/',include('crud.urls')),
     path('api/',include('api.urls')),
     path('crudsucursales/',include('crudsucursales.urls')),
+    path('crudcategorias/',include('crudcategorias.urls')),
     
 ]
 if settings.DEBUG:

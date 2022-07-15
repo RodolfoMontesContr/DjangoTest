@@ -8,7 +8,7 @@
             <h2>Edicion Producto</h2>
             <div class="card">
                 <div class="card-body">
-                    <form action="\editarProducto\" method="POST">{% csrf_token %}
+                    <form action="/editarProducto/" method="POST">{% csrf_token %}
                         <div class="form-group">
                             <input type="text" id="=txtCodigo" name="txtCodigo" value="{{producto.codigo}}" class="form-control" placeholder="Codigo" minlength="1" readonly required >
                         </div>
