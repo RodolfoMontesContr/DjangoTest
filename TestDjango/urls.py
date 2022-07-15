@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('core.urls')),
     path('crud/',include('crud.urls')),
+    path('api/',include('api.urls')),
 ]
 if settings.DEBUG:
     from django.conf.urls.static import static

@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'svg',
-    'crud'
+    'crud',
+    'rest_framework',
+    'api',
+    
 ]
 
 MIDDLEWARE = [
