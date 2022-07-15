@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'crud',
     'rest_framework',
     'api',
+    'crudsucursales',
     
 ]
 

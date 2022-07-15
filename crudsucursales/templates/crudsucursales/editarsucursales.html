@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block first_content %}
+
+<div class="container col-5 mt-2 text-white text-center rounded" style="background-color: purple;">
+    <h1>Registro de Sucursales</h1>    
+</div>
+<div class="container mt-4 mb-4">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group mb-3">
+            <label for="idSucursal" class="fw-bold">ID Sucursal</label>
+            <div class="input-group">
+                {{form.idSucursal}}
+            </div>
+        </div>
+        <div class="form-group mb-3">
+            <label for="nombresucursal" class="fw-bold">Nombre Sucursal</label>
+            <div class="input-group">
+                {{form.nombresucursal}}
+            </div>
+        </div>
+        <div class="form-group mb-3">
+            <label for="direccion" class="text-dark fw-bold">Dirección</label>
+            <div class="input-group">
+                {{form.direccion}}
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
