@@ -20,8 +20,6 @@ urlpatterns= [
     path('nuestrosdescuentos',nuestrosdescuentos,name="nuestrosdescuentos"),
     path('trabajeconnosotros',trabajeconnosotros,name="trabajeconnosotros"),
     path('atencionlocales',atencionlocales,name="atencionlocales"),
-
-
-
+    path('vistasucursales',vistasucursales,name="sucursales")
 
 ]

@@ -1,33 +1,39 @@
-{% extends 'core/base.html' %}
+{% extends 'crudsucursales/base.html' %}
 {% load static %}
-{% block title %}Home{% endblock %}
+{% block title %} Editar Sucursales {% endblock %}
 
 {% block first_content %}
 
 <div class="container col-5 mt-2 text-white text-center rounded" style="background-color: purple;">
     <h1>Registro de Sucursales</h1>    
 </div>
-<div class="container mt-4 mb-4">
-    <form action="" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        <div class="form-group mb-3">
-            <label for="idSucursal" class="fw-bold">ID Sucursal</label>
-            <div class="input-group">
-                {{form.idSucursal}}
-            </div>
-        </div>
-        <div class="form-group mb-3">
-            <label for="nombresucursal" class="fw-bold">Nombre Sucursal</label>
-            <div class="input-group">
-                {{form.nombresucursal}}
-            </div>
-        </div>
-        <div class="form-group mb-3">
-            <label for="direccion" class="text-dark fw-bold">Dirección</label>
-            <div class="input-group">
-                {{form.direccion}}
-            </div>
-        </div>
-    </form>
+<div class="container-fluid mt-4 mb-4">
+    <div class="table-responsive">
+    <table class="table table-hover">
+        <thead style="background-color: purple; color: antiquewhite;">
+        <th>Id sucursal</th>
+        <th>Nombre sucursal</th>
+        <th>Dirección</th>
+        <th>Horario</th>
+        <th>Festivos</th>
+      
+        </thead>
+        <tbody>
+            {% for p in sucursal %}
+            <tr>
+                <td>{{p.idSucursal}}</td>
+                <td>{{p.nombresucursal}}</td>
+                <td>{{p.direccion}}</td>
+                <td>{{p.horario}}</td>
+                <td>{{p.festivos}}</td>
+                <td>
+                    <td><a href="editar_sucursal/{{p.idSucursal}}" class="btn btn-danger">Editar</a></td>
+                    <td><a href="borrar_sucursal/{{p.idSucursal}}" class="btn btn-danger">Eliminar</a></td>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
 </div>
 {% endblock %}

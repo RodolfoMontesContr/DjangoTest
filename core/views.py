@@ -57,3 +57,6 @@ def nuestrosdescuentos(request):
 
 def trabajeconnosotros(request):
     return render(request,'core/trabajeconnosotros.html')
+
+def vistasucursales(request):
+    return render(request,'core/sucursales.html')
