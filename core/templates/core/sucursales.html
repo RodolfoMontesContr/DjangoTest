@@ -4,32 +4,31 @@
 
 {% block first_content %}
 <div class="container col-5 mt-2 text-white text-center rounded" style="background-color: purple;">
-    <h1>Nuestras ucursales</h1>    
+    <h1>Registro de Sucursales</h1>    
 </div>
-<div class="container mt-4 mb-4 border border-dark" style="background-color: purple;">
+<div class="container-fluid mt-4 mb-4">
     <div class="table-responsive">
-        <table class="table table-hover">
-            <thead style="background-color: purple; color: antiquewhite;">
-                <th>Id sucursal</th>
-                <th>Nombre sucursal</th>
-                <th>Dirección</th>
-                <th>Horario</th>
-                <th>Festivos</th>
-            </thead>
-            <tbody>
-                {% for p in sucursal %}
-                <tr>
-                    <td>{{p.idSucursal}}</td>
-                    <td>{{p.nombresucursal}}</td>
-                    <td>{{p.direccion}}</td>
-                    <td>{{p.horario}}</td>
-                    <td>{{p.festivos}}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
+    <table class="table table-hover">
+        <thead style="background-color: purple; color: antiquewhite;">
+        <th>Id sucursal</th>
+        <th>Nombre sucursal</th>
+        <th>Dirección</th>
+        <th>Horario</th>
+        <th>Festivos</th>
+      
+        </thead>
+        <tbody>
+            {% for p in sucursal %}
+            <tr>
+                <td>{{p.idSucursal}}</td>
+                <td>{{p.nombresucursal}}</td>
+                <td>{{p.direccion}}</td>
+                <td>{{p.horario}}</td>
+                <td>{{p.festivos}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
-
-
+</div>
 {% endblock %}

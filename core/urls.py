@@ -20,6 +20,9 @@ urlpatterns= [
     path('nuestrosdescuentos',nuestrosdescuentos,name="nuestrosdescuentos"),
     path('trabajeconnosotros',trabajeconnosotros,name="trabajeconnosotros"),
     path('atencionlocales',atencionlocales,name="atencionlocales"),
-    path('vistasucursales',vistasucursales,name="sucursales")
+    path('vistasucursales',vistasucursales,name="sucursales"),
+    path('carnet_tipo3',carnet_tipo3,name="carnet_tipo3"),
+    path('cascabel_gato',cascabel_gato,name="cascabel_gato"),
+    path('bandana_perro',bandana_perro,name="bandana_perro")
 
 ]
